@@ -119,7 +119,7 @@ jobs:
               sys.exit(1)
           print('pip audit: no high/critical vulnerabilities')
           EOF
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
       - name: npm audit web/ and portal/
